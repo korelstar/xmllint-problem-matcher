@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="info.xsd">
+    <idi>uniqueid</id>
+    <name attribut="test">App name</name>
+    </summary>This is for test</summary>
+    <description><![CDATA[
+Let's describe something	    
+]]></description>
+    <licence>agpl</licence>
+    <version>1.4</version>
+</info>
