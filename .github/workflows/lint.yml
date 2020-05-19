@@ -13,8 +13,7 @@ jobs:
       uses: actions/checkout@master
     - name: Setup xmllint
       run: sudo apt-get install --no-install-recommends -y libxml2-utils
-    - name: add problem matcher for xmllint
-      run: ./index.js
+    - uses: ./
     - name: lint XML file with syntax error
       run: xmllint test/error.xml --schema test/info.xsd --noout || true
     - name: lint XML file with schema error
