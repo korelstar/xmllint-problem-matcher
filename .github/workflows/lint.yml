@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
     - name: Setup xmllint
       run: sudo apt-get install --no-install-recommends -y libxml2-utils
     - uses: ./
@@ -18,4 +18,3 @@ jobs:
       run: xmllint test/error.xml --schema test/info.xsd --noout || true
     - name: lint XML file with schema error
       run: xmllint test/info.xml --schema test/info.xsd --noout || true
-
