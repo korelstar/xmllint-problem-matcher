@@ -7,5 +7,5 @@ This problem matcher lets you show errors from `xmllint` as annotation in GitHub
 Add the step to your workflow, before `xmllint` is called.
 
 ```yaml
-    - uses: korelstar/xmllint-problem-matcher@v1
+    - uses: korelstar/xmllint-problem-matcher@v1.1
 ```
